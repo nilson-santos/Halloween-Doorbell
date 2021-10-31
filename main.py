@@ -2,7 +2,7 @@ import os
 import random
 import RPi.GPIO as GPIO # Import Raspberry Pi GPIO library
 from time import sleep
-os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide" # Hides an annoying message from pygame
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 from pygame import mixer
 
 GPIO.setwarnings(False) # Ignore warning for now
