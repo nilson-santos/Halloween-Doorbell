@@ -13,7 +13,7 @@ sounds = next(os.walk(os.path.dirname(os.path.realpath(__file__))+'/sounds'), (N
 mixer.init()
 
 while True: # Run forever
-    if GPIO.input(10) == GPIO.HIGH:
+    if GPIO.input(10) == GPIO.LOW:
         print("Button was pushed!")
         sound = mixer.Sound(f"sounds/{random.choice(sounds)}")
         sound.play()
